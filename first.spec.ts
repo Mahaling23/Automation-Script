@@ -119,6 +119,7 @@ test('HBANKOM - Complete Insurance Journey', async ({ page }) => {
     // =========================================================
     // 11. Nominee Details
     // =========================================================
+    console.log
     await page1.locator('#Selector').first().selectOption('mr');
     await page1.getByRole('textbox', { name: 'Full Name' }).fill('Mayaa Shinde');
     await page1.locator('input[name="day"]').fill('05');
