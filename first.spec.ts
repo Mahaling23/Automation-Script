@@ -110,7 +110,8 @@ test('HBANKOM - Complete Insurance Journey', async ({ page }) => {
     // =========================================================
     // 10. Declaration Page
     // =========================================================
-    await page1.waitForLoadState('load');
+    await page
+     page1.waitForLoadState('load');
     await page1.getByRole('heading', { name: 'My Declarations' }).click();
     await page1.locator('span').nth(1).click();
     await page1.getByRole('button', { name: 'PROCEED' }).click();
